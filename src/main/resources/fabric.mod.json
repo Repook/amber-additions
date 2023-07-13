@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "amberadditions",
+	"version": "${version}",
+	"name": "Amber Additions",
+	"description": "Adds a new resource to the game, Amber!",
+	"authors": [
+		"Repook-Coding",
+		"Ben-Art"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/amberadditions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.repook.amberadditions.AmberAdditionsMod"
+		],
+		"fabric-datagen": [
+			"net.repook.amberadditions.AmberAdditionsModDataGenerator"
+		],
+		"client": [
+			"net.repook.amberadditions.AmberAdditionsModClient"
+		]
+	},
+	"mixins": [
+		"amberadditions.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
