@@ -8,6 +8,7 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.gen.treedecorator.TreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.repook.amberadditions.AmberAdditionsMod;
+import net.repook.amberadditions.block.ModBlocks;
 
 public class AmberTreeDecorator extends TreeDecorator {
     public static final AmberTreeDecorator INSTANCE = new AmberTreeDecorator();
@@ -39,10 +40,15 @@ public class AmberTreeDecorator extends TreeDecorator {
 
             // Place the gold block using the replacer BiConsumer
             // This is the standard way of placing blocks in TreeDecorators
-
+            if (generator.isAir(targetPosition.down(1))){
+                System.out.println("True");
+                generator.replace(targetPosition, ModBlocks.AMBER_BLOCK.getDefaultState());
+            } else {
+                System.out.println("False");
+            }
             //if(generator.isAir(pos.down())) {
             //generator.replace(pos.offset(Direction.DOWN, 1), Blocks.ORANGE_WOOL.getDefaultState());
-                generator.replace(targetPosition, Blocks.GOLD_BLOCK.getDefaultState());
+
             //}
 
         }

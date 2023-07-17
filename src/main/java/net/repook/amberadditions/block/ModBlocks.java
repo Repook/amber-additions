@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.block.SaplingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -11,6 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.repook.amberadditions.AmberAdditionsMod;
+import net.repook.amberadditions.block.custom.AmberBlock;
 import net.repook.amberadditions.world.tree.VeraWoodSaplingGenerator;
 
 public class ModBlocks {
@@ -18,11 +20,13 @@ public class ModBlocks {
     public static final Block VERA_WOOD_PLANKS = registerBlock("vera_wood_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS)));
 
+    public static final Block AMBER_BLOCK = registerBlock("amber_block",
+            new AmberBlock(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque()));
+
 
     //change null to sapling generator later
     public static final Block VERA_WOOD_SAPLING = registerBlock("vera_wood_sapling",
             new SaplingBlock(new VeraWoodSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
-
 
 
 

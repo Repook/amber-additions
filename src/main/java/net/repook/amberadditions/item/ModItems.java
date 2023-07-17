@@ -24,6 +24,7 @@ public class ModItems {
 
     private static void addItemToBuildingBlocksItemGroup(FabricItemGroupEntries entries){
         entries.add(ModBlocks.VERA_WOOD_PLANKS);
+        entries.add(ModBlocks.AMBER_BLOCK);
     }
 //what is used to register items
     private static Item registerItem(String name, Item item){
