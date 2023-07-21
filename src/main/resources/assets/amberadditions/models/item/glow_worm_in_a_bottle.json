@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "amberadditions:item/glow_worm_in_a_bottle"
+  }
+}

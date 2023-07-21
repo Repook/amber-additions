@@ -2,11 +2,19 @@ package net.repook.amberadditions;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.repook.amberadditions.block.ModBlocks;
+import net.repook.amberadditions.entity.ModEntities;
 import net.repook.amberadditions.item.ModItems;
+import net.repook.amberadditions.item.custom.CustomGlassBottleItem;
 import net.repook.amberadditions.mixin.TreeDecoratorTypeInvoker;
 import net.repook.amberadditions.util.ModLootTableModifiers;
+import net.repook.amberadditions.util.ModRegistries;
 import net.repook.amberadditions.world.gen.ModWorldGeneration;
 import net.repook.amberadditions.world.gen.treedecorator.AmberTreeDecorator;
 import org.slf4j.Logger;
@@ -24,5 +32,7 @@ public class AmberAdditionsMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModLootTableModifiers.modifyLootTables();
 		ModWorldGeneration.generateModWorldGeneration();
+		ModEntities.registerModEntities();
+		ModRegistries.registerModStuffs();
 	}
 }
