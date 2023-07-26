@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:arrow"
+    },
+    "G": {
+      "item": "amberadditions:glow_worm_in_a_bottle"
+    },
+    "I": {
+      "item": "minecraft:glow_ink_sac"
+    }
+  },
+  "pattern": [
+    "I",
+    "A",
+    "G"
+  ],
+  "result": {
+    "count": 3,
+    "item": "minecraft:spectral_arrow"
+  },
+  "show_notification": true
+}

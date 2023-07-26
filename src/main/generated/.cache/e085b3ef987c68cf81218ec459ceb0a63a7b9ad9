@@ -1,2 +1,6 @@
-// 1.20.1	2023-07-19T13:04:48.4471183	Amber Additions/Tags for minecraft:block
+// 1.20.1	2023-07-26T18:00:21.5432121	Amber Additions/Tags for minecraft:block
+0fb25c49f2e05b4b6a23b37bf15e86c5a7299ece data\minecraft\tags\blocks\fences.json
+f4936e14b3817b4de02eb3b8208a48b7ce7301d5 data\minecraft\tags\blocks\fence_gates.json
+826c39ed9abd88e2a731d136b343fe42fe204e8a data\minecraft\tags\blocks\logs_that_burn.json
+e423a91aa21e821477dd1e3d669e3704b3ebfc33 data\minecraft\tags\blocks\all_hanging_signs.json
 32216c546f10455989b401edf024e97aed5220c8 data\minecraft\tags\blocks\mineable\axe.json

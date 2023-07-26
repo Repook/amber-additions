@@ -2,7 +2,19 @@
   "item.amberadditions.amber": "Amber Fossil",
   "item.amberadditions.glow_worm_in_a_bottle": "Glow Worm In A Bottle",
   "block.amberadditions.vera_wood_planks": "Vera Wood Planks",
+  "block.amberadditions.vera_wood_stairs": "Vera Wood Stairs",
+  "block.amberadditions.vera_wood_slab": "Vera Wood Slab",
+  "block.amberadditions.vera_wood_pressure_plate": "Vera Wood Pressure Plate",
+  "block.amberadditions.vera_wood_button": "Vera Wood Button",
+  "block.amberadditions.vera_wood_fence": "Vera Wood Fence",
+  "block.amberadditions.vera_wood_fence_gate": "Vera Wood Fence Gate",
+  "block.amberadditions.vera_wood_hanging_sign": "Vera Wood Hanging Sign",
+  "block.amberadditions.vera_wood_sign": "Vera Wood Sign",
   "block.amberadditions.vera_wood_sapling": "Vera Wood Sapling",
   "block.amberadditions.amber_block": "Amber Block",
-  "item.amberadditions.glow_worm_spawn_egg": "Glow Worm Spawn Egg"
+  "item.amberadditions.glow_worm_spawn_egg": "Glow Worm Spawn Egg",
+  "block.amberadditions.vera_wood_log": "Vera Wood Log",
+  "block.amberadditions.vera_wood": "Vera Wood",
+  "block.amberadditions.stripped_vera_wood_log": "Stripped Vera Wood Log",
+  "block.amberadditions.stripped_vera_wood": "Stripped Vera Wood"
 }

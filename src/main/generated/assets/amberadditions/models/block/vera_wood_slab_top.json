@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "amberadditions:block/vera_wood_planks",
+    "side": "amberadditions:block/vera_wood_planks",
+    "top": "amberadditions:block/vera_wood_planks"
+  }
+}

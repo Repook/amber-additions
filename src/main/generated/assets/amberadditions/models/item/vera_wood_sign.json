@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "amberadditions:item/vera_wood_sign"
+  }
+}

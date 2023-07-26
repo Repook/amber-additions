@@ -37,7 +37,7 @@ public class AmberFossilItem extends Item {
             glow_worm.refreshPositionAndAngles(blockPosOffset.getX() + 0.5D, blockPosOffset.getY(), blockPosOffset.getZ() + 0.5D, 0.0F, 0.0F);
             world.spawnEntity(glow_worm);
             world.syncWorldEvent(null, 1016, blockPos, 0);
-            world.playSound(null, blockPos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.PLAYERS, 1.0F, 1.0F);
+            world.playSound(null, blockPos, SoundEvents.BLOCK_STONE_BREAK, SoundCategory.PLAYERS, 1.0F, 1.0F);
             context.getStack().decrement(1); // This line removes one item from the stack when right-clicked
 
         }

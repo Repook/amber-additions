@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "amberadditions:block/stripped_vera_wood_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "amberadditions:block/stripped_vera_wood_log"
+    },
+    "axis=z": {
+      "model": "amberadditions:block/stripped_vera_wood_log_horizontal",
+      "x": 90
+    }
+  }
+}

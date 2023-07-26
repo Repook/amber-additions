@@ -9,9 +9,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.repook.amberadditions.block.ModBlocks;
+import net.repook.amberadditions.block.entity.ModBlockEntities;
 import net.repook.amberadditions.entity.ModEntities;
 import net.repook.amberadditions.item.ModItems;
-import net.repook.amberadditions.item.custom.CustomGlassBottleItem;
 import net.repook.amberadditions.mixin.TreeDecoratorTypeInvoker;
 import net.repook.amberadditions.util.ModLootTableModifiers;
 import net.repook.amberadditions.util.ModRegistries;
@@ -34,5 +34,6 @@ public class AmberAdditionsMod implements ModInitializer {
 		ModWorldGeneration.generateModWorldGeneration();
 		ModEntities.registerModEntities();
 		ModRegistries.registerModStuffs();
+		ModBlockEntities.registerBlockEntities();
 	}
 }

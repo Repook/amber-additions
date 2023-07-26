@@ -17,6 +17,7 @@ import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.repook.amberadditions.AmberAdditionsMod;
+import net.repook.amberadditions.block.ModBlocks;
 import net.repook.amberadditions.world.gen.treedecorator.AmberTreeDecorator;
 
 import java.util.Collections;
@@ -29,7 +30,7 @@ public class ModConfiguredFeatures {
 
     public static void bootstrap(Registerable<ConfiguredFeature<?,?>> context){
         register(context, VERA_WOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(Blocks.DIAMOND_BLOCK),
+                BlockStateProvider.of(ModBlocks.VERA_WOOD_LOG),
                 new StraightTrunkPlacer(3, 0, 2),
                 BlockStateProvider.of(Blocks.NETHERITE_BLOCK),
                 new AcaciaFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0)),

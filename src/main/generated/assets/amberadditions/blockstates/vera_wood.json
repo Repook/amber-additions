@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "amberadditions:block/vera_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "amberadditions:block/vera_wood"
+    },
+    "axis=z": {
+      "model": "amberadditions:block/vera_wood",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "amberadditions:block/vera_wood_log_top",
+    "side": "amberadditions:block/vera_wood_log"
+  }
+}

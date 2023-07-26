@@ -32,4 +32,9 @@ public class GlowWormRenderer extends LivingEntityRenderer<GlowWormEntity,GlowWo
 
         super.render(livingEntity, f, g, matrixStack, vertexConsumerProvider, i);
     }
+
+    @Override
+    protected boolean hasLabel(GlowWormEntity livingEntity) {
+        return false;
+    }
 }

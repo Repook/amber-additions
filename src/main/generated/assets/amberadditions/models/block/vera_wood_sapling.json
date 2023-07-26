@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "amberadditions:block/vera_wood_sapling"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "amberadditions:block/vera_wood_planks"
+  }
+}

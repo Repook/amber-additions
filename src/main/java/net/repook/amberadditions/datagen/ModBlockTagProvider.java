@@ -18,5 +18,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.VERA_WOOD_PLANKS);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.VERA_WOOD_LOG,ModBlocks.VERA_WOOD,ModBlocks.STRIPPED_VERA_WOOD_LOG,ModBlocks.STRIPPED_VERA_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.VERA_WOOD_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.VERA_WOOD_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.ALL_HANGING_SIGNS)
+                .add(ModBlocks.VERA_WOOD_HANGING_SIGN);
     }
+
 }
