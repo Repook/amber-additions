@@ -3,12 +3,10 @@ package net.repook.amberadditions.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.repook.amberadditions.AmberAdditionsMod;
 import net.repook.amberadditions.block.custom.ModHangingSignBlock;
@@ -25,6 +23,8 @@ public class ModBlocks {
     public static final Block VERA_WOOD_PLANKS = registerBlock("vera_wood_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS)));
 
+    public static final Block VERA_WOOD_LEAVES = registerBlock("vera_wood_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.AZALEA_LEAVES).strength(1f).nonOpaque()));
     public static final Block VERA_WOOD_SIGN = registerBlockWithoutBlockItem("vera_wood_sign",
             new ModStandingSignBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN), ModWoodTypes.VERA_WOOD));
     public static final Block VERA_WOOD_WALL_SIGN = registerBlockWithoutBlockItem("vera_wood_wall_sign",
@@ -66,9 +66,15 @@ public class ModBlocks {
     public static final Block STRIPPED_VERA_WOOD = registerBlock("stripped_vera_wood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_CHERRY_LOG)));
 
+    public static final Block VERA_WOOD_DOOR = registerBlock("vera_wood_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR),BlockSetType.CHERRY));
+
+    public static final Block VERA_WOOD_TRAPDOOR = registerBlock("vera_wood_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_TRAPDOOR),BlockSetType.CHERRY));
+
 //amber block
     public static final Block AMBER_BLOCK = registerBlock("amber_block",
-            new TransparentBlock(FabricBlockSettings.copyOf(Blocks.COPPER_ORE).nonOpaque().mapColor(MapColor.ORANGE).strength(4.5f,
+            new TransparentBlock(FabricBlockSettings.copyOf(Blocks.COPPER_ORE).nonOpaque().mapColor(MapColor.ORANGE).strength(3.0f,
                     3.0f)));
 
 //(AbstractBlock.Settings.copy(GOLD_ORE).mapColor(MapColor.DEEPSLATE_GRAY).strength(4.5f, 3.0f).sounds(BlockSoundGroup.DEEPSLATE))

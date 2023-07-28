@@ -27,6 +27,7 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_VERA_WOOD,5,5);
 
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.VERA_WOOD_PLANKS,5,20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.VERA_WOOD_LEAVES,30,60);
     }
 
 

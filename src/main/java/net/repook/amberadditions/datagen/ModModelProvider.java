@@ -32,6 +32,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.VERA_WOOD_LOG).log(ModBlocks.VERA_WOOD_LOG).wood(ModBlocks.VERA_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_VERA_WOOD_LOG).log(ModBlocks.STRIPPED_VERA_WOOD_LOG).wood(ModBlocks.STRIPPED_VERA_WOOD);
         //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERA_WOOD_PLANKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERA_WOOD_LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.VERA_WOOD_SAPLING,BlockStateModelGenerator.TintType.NOT_TINTED);
 
         tPlnaks.stairs(ModBlocks.VERA_WOOD_STAIRS);
@@ -40,6 +41,9 @@ public class ModModelProvider extends FabricModelProvider {
         tPlnaks.pressurePlate(ModBlocks.VERA_WOOD_PRESSURE_PLATE);
         tPlnaks.fence(ModBlocks.VERA_WOOD_FENCE);
         tPlnaks.fenceGate(ModBlocks.VERA_WOOD_FENCE_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.VERA_WOOD_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.VERA_WOOD_TRAPDOOR);
 
 
 

@@ -2,11 +2,6 @@ package net.repook.amberadditions;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.repook.amberadditions.block.ModBlocks;
 import net.repook.amberadditions.block.entity.ModBlockEntities;

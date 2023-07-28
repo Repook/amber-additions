@@ -32,7 +32,7 @@ public class ModConfiguredFeatures {
         register(context, VERA_WOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.VERA_WOOD_LOG),
                 new StraightTrunkPlacer(3, 0, 2),
-                BlockStateProvider.of(Blocks.NETHERITE_BLOCK),
+                BlockStateProvider.of(ModBlocks.VERA_WOOD_LEAVES),
                 new AcaciaFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0)),
                 new TwoLayersFeatureSize(1, 0, 2)).decorators(Collections.singletonList(AmberTreeDecorator.INSTANCE)).build());
 

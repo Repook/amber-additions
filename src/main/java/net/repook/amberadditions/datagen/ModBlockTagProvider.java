@@ -17,7 +17,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .add(ModBlocks.VERA_WOOD_PLANKS);
+                .add(ModBlocks.VERA_WOOD_PLANKS,ModBlocks.VERA_WOOD_DOOR,ModBlocks.VERA_WOOD_SIGN,ModBlocks.VERA_WOOD_TRAPDOOR,ModBlocks.VERA_WOOD_WALL_HANGING_SIGN,ModBlocks.VERA_WOOD_BUTTON
+                        ,ModBlocks.VERA_WOOD_PRESSURE_PLATE);
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.VERA_WOOD_LOG,ModBlocks.VERA_WOOD,ModBlocks.STRIPPED_VERA_WOOD_LOG,ModBlocks.STRIPPED_VERA_WOOD);
@@ -30,6 +31,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.ALL_HANGING_SIGNS)
                 .add(ModBlocks.VERA_WOOD_HANGING_SIGN);
+
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.AMBER_BLOCK);
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(ModBlocks.AMBER_BLOCK);
     }
 
 }

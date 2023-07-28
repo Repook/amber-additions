@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
-    "amberadditions:vera_wood_planks"
+    "amberadditions:vera_wood_planks",
+    "amberadditions:vera_wood_door",
+    "amberadditions:vera_wood_sign",
+    "amberadditions:vera_wood_trapdoor",
+    "amberadditions:vera_wood_wall_hanging_sign",
+    "amberadditions:vera_wood_button",
+    "amberadditions:vera_wood_pressure_plate"
   ]
 }

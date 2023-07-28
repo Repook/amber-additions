@@ -10,7 +10,7 @@ import net.repook.amberadditions.world.ModPlacedFeatures;
 public class ModTreeGeneration {
 
     public static void generateTrees(){
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SPARSE_JUNGLE),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.VERA_WOOD_PLACED_KEY);
     }
 }

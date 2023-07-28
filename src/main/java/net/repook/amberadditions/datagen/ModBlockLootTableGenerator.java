@@ -26,6 +26,12 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VERA_WOOD_FENCE);
         addDrop(ModBlocks.VERA_WOOD_FENCE_GATE);
         addDrop(ModBlocks.VERA_WOOD_HANGING_SIGN);
+        addDrop(ModBlocks.VERA_WOOD_DOOR, doorDrops(ModBlocks.VERA_WOOD_DOOR));
+        addDrop(ModBlocks.VERA_WOOD_TRAPDOOR);
+        addDrop(ModBlocks.AMBER_BLOCK, oreDrops(ModBlocks.AMBER_BLOCK, ModItems.AMBER));
+
+        addDrop(ModBlocks.VERA_WOOD_LEAVES, leavesDrops(ModBlocks.VERA_WOOD_LEAVES, ModBlocks.VERA_WOOD_SAPLING, SAPLING_DROP_CHANCE));
+
         //addDrop(ModBlocks.AMBER_BLOCK, oreDrops(ModBlocks.AMBER_BLOCK, ModItems.AMBER));
     }
 }
