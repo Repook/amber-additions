@@ -9,6 +9,7 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.repook.amberadditions.block.ModBlocks;
 import net.repook.amberadditions.item.ModItems;
+import net.repook.amberadditions.util.ModTags;
 
 import java.util.function.Consumer;
 
@@ -33,6 +34,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GLOW_INK_SAC),conditionsFromItem(Items.GLOW_INK_SAC))
                 .offerTo(exporter, new Identifier(getRecipeName(Items.SPECTRAL_ARROW) + "_"));
 
-
+        offerPlanksRecipe(exporter, ModBlocks.VERA_WOOD_PLANKS, ModTags.Items.VERA_WOOD_LOGS, 4);
     }
 }
