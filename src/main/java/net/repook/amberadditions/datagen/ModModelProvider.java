@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Model;
+import net.minecraft.data.client.Models;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.util.Identifier;
 import net.repook.amberadditions.block.ModBlocks;
@@ -51,11 +52,19 @@ public class ModModelProvider extends FabricModelProvider {
 
 
 
+
+
+
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 itemModelGenerator.register(ModItems.GLOW_WORM_SPAWN_EGG,
         new Model(Optional.of(new Identifier("item/template_spawn_egg")),Optional.empty()));
+
+
+
+itemModelGenerator.register(ModItems.VERA_WOOD_BOAT, Models.GENERATED);
+itemModelGenerator.register(ModItems.VERA_WOOD_CHEST_BOAT, Models.GENERATED);
     }
 }

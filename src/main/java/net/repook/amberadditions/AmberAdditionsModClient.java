@@ -1,5 +1,6 @@
 package net.repook.amberadditions;
 
+import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
@@ -11,6 +12,7 @@ import net.minecraft.client.render.block.entity.HangingSignBlockEntityRenderer;
 import net.minecraft.client.render.block.entity.SignBlockEntityRenderer;
 import net.repook.amberadditions.block.ModBlocks;
 import net.repook.amberadditions.block.entity.ModBlockEntities;
+import net.repook.amberadditions.entity.ModBoats;
 import net.repook.amberadditions.entity.ModEntities;
 import net.repook.amberadditions.entity.client.GlowWormModel;
 import net.repook.amberadditions.entity.client.GlowWormRenderer;
@@ -30,5 +32,6 @@ public class AmberAdditionsModClient implements ClientModInitializer {
         TexturedRenderLayers.SIGN_TYPE_TEXTURES.put(ModWoodTypes.VERA_WOOD, TexturedRenderLayers.getSignTextureId(ModWoodTypes.VERA_WOOD));
         BlockEntityRendererFactories.register(ModBlockEntities.MOD_SIGN_BLOCK_ENTITY, SignBlockEntityRenderer::new);
         BlockEntityRendererFactories.register(ModBlockEntities.MOD_HANGING_SIGN_BLOCK_ENTITY, HangingSignBlockEntityRenderer::new);
+        TerraformBoatClientHelper.registerModelLayers(ModBoats.VERA_WOOD_BOAT_ID,false);
     }
 }

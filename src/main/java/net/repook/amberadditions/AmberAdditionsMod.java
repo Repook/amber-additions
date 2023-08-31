@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
 import net.repook.amberadditions.block.ModBlocks;
 import net.repook.amberadditions.block.entity.ModBlockEntities;
+import net.repook.amberadditions.entity.ModBoats;
 import net.repook.amberadditions.entity.ModEntities;
 import net.repook.amberadditions.item.ModItems;
 import net.repook.amberadditions.mixin.TreeDecoratorTypeInvoker;
@@ -30,5 +31,6 @@ public class AmberAdditionsMod implements ModInitializer {
 		ModEntities.registerModEntities();
 		ModRegistries.registerModStuffs();
 		ModBlockEntities.registerBlockEntities();
+		ModBoats.registerBoats();
 	}
 }
